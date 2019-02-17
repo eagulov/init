@@ -1,0 +1,6 @@
+# Find the command that kills the background command’s process
+
+kill $!
+
+# To kill most recently backgrounded job
+# '$!' expands to PID of last process executed in background

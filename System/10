@@ -1,0 +1,9 @@
+# Name the command that lists the partition tables of drives?
+
+fdisc -l
+
+# or 
+
+sudo fdisc -l
+
+# 'fdisk' is most commonly used command to check partitions on disk

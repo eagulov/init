@@ -1,0 +1,7 @@
+# Find out IP address of slash16.org
+
+163.172.250.12
+163.172.250.13
+163.172.250.11
+
+# 'nslookup 42.fr' or 'host 42.fr' can display this information

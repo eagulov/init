@@ -1,0 +1,27 @@
+# What file has to be modified to make it permanent?
+
+/etc/hostname
+
+# Temporary name change 'hostname new_name'. Name will be activ until rebooti
+# Debian systems read '/etc/hostname' when booting, to set computer name
+# After that, name is set while '/etc/init.d/hostname' script is running
+
+# To make it permanent need modify this file
+
+sudo vim /etc/hostname
+
+# After that reboot script
+
+/etc/init.d/hostname start
+
+# Or just restart machine
+# Check file '/etc/hosts' is there an old computer name in it. It must also
+# be replaced with new name
+
+sudo sed -i 's/debianworld.ru/new-debianworld.ru/g' /etc/hosts
+
+# After that, need to re-raise network
+
+sudo /etc/init.d/networking restart
+
+# Or just restart machine

@@ -1,0 +1,14 @@
+# Find the command that add a new local user
+
+# If you are signed in as root user, you can create new user at any time
+# by typing:
+
+adduser user_name
+
+# If you are signed in as a non-root user who has been given sudo privileges,
+# as demonstrated in the initial server setup guide, you can add new user
+# by typing:
+
+sudo adduser user_name
+
+# 'adduser' command created a user, a group, and a home directory for user

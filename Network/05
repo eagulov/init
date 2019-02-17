@@ -1,0 +1,8 @@
+# Identify the IP address of the DNS that responds to the following url:
+# slash16.org
+
+nslookup slash16.org | grep Server | awk '{print $2}'
+
+# Retrieve DNS information by using 'nslookup'
+# Take row 'Server'
+# 'awk' is used to print 2nd word which is IP address of DNS

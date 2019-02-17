@@ -1,0 +1,11 @@
+# Find the command that kills ssh service
+
+last | grep "logged in"
+
+# Check who is logged in
+
+ps -aux | grep ssh
+
+# then in left side there will be PID like 1125 or what ever
+
+kill -9 <PID>

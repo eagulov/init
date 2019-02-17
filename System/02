@@ -1,0 +1,10 @@
+# What command can you use to rename your system?
+
+hostname
+
+#debian
+
+hostname new_name
+hostname
+
+#new_name

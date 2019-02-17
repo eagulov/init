@@ -1,0 +1,7 @@
+# Get the complete path of the file that contains the IP address of
+# the DNS server you’re using
+
+cat /etc/resolv.conf
+
+# 'Cat' (short for concatenate) is used to concatenate and display files
+# etc/resolv.conf contains IP address of used DNS server

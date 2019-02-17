@@ -1,0 +1,8 @@
+# Identify the MAC address of the Wi-Fi card
+
+ifconfig en1 | grep "ether " | cut -d ' ' -f 2
+
+# Display Wi-Fi card, located at en1
+# Take row with "ether "
+# -d " " -f 2, take result and exctract 2nd word which is address. 
+

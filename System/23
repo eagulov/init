@@ -1,0 +1,25 @@
+# Explain how connect yourself as new user. (With graphic session and
+# ssh session)
+
+Log in to your server
+Log in to your system as the root user:
+# ssh root@server_ip_address
+
+Create a new user account
+# Use 'adduser' command. Don’t forget to replace username with your desired
+# user name:
+adduser new_username
+# Command will prompt to set and confirm the new user password.
+
+Add user to sudo group
+# By default on Debian systems, members of group sudo are granted with sudo
+# access. To add user to sudo group use usermod command:
+usermod -aG sudo username
+# '-a' option tells usermod we are appending and '-G' option tells usermod
+# we are appending to group name that follows option
+
+# after use command 'su' to switch user
+su new_username
+
+# 'whoami' command tells which user you are currently running
+whoami

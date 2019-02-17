@@ -1,0 +1,13 @@
+# Name the command that determines the state of the SSH service.
+
+ps -ef | grep ssh
+
+# 'ps -ef' shows all the current process 'grep ssh' gives only 'ssh'
+
+# or
+
+service ssh status
+
+# or
+
+/etc/init.d/ssh status

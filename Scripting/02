@@ -1,0 +1,13 @@
+# Write a script which delete an ACTIVE user on the VM.
+
+# To list all users:
+cut -d: -f1 /etc/passwd
+# To remove user:
+sudo userdel username
+# To remove home directory:
+sudo rm -r /home/username
+
+# or scripts for more advanced:
+sudo deluser --remove-home user
+# or
+sudo deluser --remove-all-files user

@@ -1,0 +1,14 @@
+# List all real users on the VM
+
+cat /etc/passwd | grep '/home' | cut -d: -f1
+
+# Real users on system have a home directory at /home
+
+# or 
+# Real users have UIDs starting at 1000, so you can use that fact to filter out # non-reals
+
+cut -d: -f1,3 /etc/passwd | egrep ':[0-9]{4}$' | cut -d: -f1
+
+# This cuts first (username) and third (UID) colon-delimited fields from
+# /etc/passwd, then filters for resulting lines which end with colon and four
+# digits, then cuts first (username)

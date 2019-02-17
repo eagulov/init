@@ -1,0 +1,12 @@
+# Identify and display the Ethernet interface characteristics:
+# (a) Identify broadcast address
+# (b) Identify all IP adresses which are part of the same subnet
+
+ifconfig en0 | grep "inet " | cut -d " " -f 2 -f 4 -f 6
+
+# Display ethernet interface, located at 'en0'
+# Take row 'inet'
+# -d " " -f 2, take result and extract 2nd word which is IP address,
+# 4th which is number of netmask (0xffff0000 = 255.255.0.0) or you can use
+# ipconfig getpacket en0 | grep 'subnet_mask ' | cut -d ' ' -f 3 to get mask,
+# and 6th which is broadcast address.

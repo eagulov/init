@@ -1,0 +1,20 @@
+# Find the provider of slash16.org
+
+nslookup slash16.org
+whois 13.35.127.147 | grep "OrgName"
+
+# Retrieve DNS information on 'slash16.org' by using 'nslookup'
+
+# Server:	10.51.1.253
+# Address:	10.51.1.253#53
+# Non-authoritative answer:
+# Name:	slash16.org
+# Address: 13.35.127.147
+# Name:	slash16.org
+# Address: 13.35.127.184
+# Name:	slash16.org
+# Address: 13.35.127.115
+# Name:	slash16.org
+# Address: 13.35.127.43
+
+# Take row 'OrgName', there is information of provider 

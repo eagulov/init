@@ -1,0 +1,8 @@
+# Name the command that displays the available space left and used
+# on the system in an humanly understandable way.
+
+df -h
+
+# df is command that displays amount of disk space available on file system
+# containing each file name argument
+# '-h, --human-readeable' prints size in powers of 1024

@@ -1,0 +1,14 @@
+# Find the command that list all packages
+
+dpkg –get-selections
+
+# Will give list of all currently installed packages
+
+# or use 'apt'
+
+apt list --installed
+
+# Output will be long list of installed packages, so it will be easier to read
+# if use 'less' command:
+
+apt list --installed | less

@@ -1,0 +1,9 @@
+# What command gives you the time since your system was last booted?
+
+uptime -s
+
+# Since last time system was booted
+
+uptime
+
+# Displays current time and for how long system is working
